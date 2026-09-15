@@ -1,4 +1,4 @@
-import profileImage from "../../assets/me.png";
+import profileImage from "../../assets/me.jpg";
 import { Badge } from "../ui/badge";
 import { Heart, Compass, Code2, Rocket, Sparkles, Coffee } from "lucide-react";
 import { motion } from "motion/react";
@@ -41,7 +41,11 @@ export default function About() {
     <section id="about" className="mt-10 sm:mt-40">
       <div className="md:grid md:grid-cols-[1fr_3fr] flex flex-wrap items-center justify-center gap-10">
         <div className="flex flex-col items-center gap-2">
-          <img className="w-60 sm:w-100" src={profileImage} alt="" />
+          <img
+            className="w-60 sm:w-100 rounded-full"
+            src={profileImage}
+            alt=""
+          />
           <Badge className="flex gap-2" variant={"secondary"}>
             <span className="size-2 rounded-full bg-pink-300"></span>
             Fernanda Guimarães
